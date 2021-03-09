@@ -10,7 +10,7 @@ export default function Aplicacao(){
   const[C, setC] = useState(null);
 
   const[tipoT, setTipoT] = useState(null);
-  const [soma, setSoma] = useState(null);
+  const[soma, setSoma] = useState(null);
   const[desc, setDesc] = useState(null);
 
   const Te = {
@@ -39,8 +39,10 @@ export default function Aplicacao(){
         
            if(A == B && B == C && A == C){
               setTipoT(Te.desc);
+            
             }else if(A == B && C != A || B == C && A != B || C == A && B != C){
               setTipoT(Ti.desc);
+              
             }else{
               setTipoT(Tes.desc);
             }
@@ -49,7 +51,13 @@ export default function Aplicacao(){
       }
     }
   }
-    
+
+  function foto(tf){
+    if(tf == "Equilátero"){
+      return(<Image source={require('./imagens/equi.png')}/>)
+    }
+  }
+
   return(
     <View style={MyStyle.container}>
       <StatusBar hidden/>
@@ -74,10 +82,10 @@ export default function Aplicacao(){
 
         <View style={MyStyle.ladoalado}>
         <Text style={MyStyle.tit2}>Tipo de Triângulo:</Text>
-        <Text style={MyStyle.conteudo}> {tipoT}</Text>
+        <Text style={MyStyle.conteudo}>{tipoT}</Text>
         </View>
 
-        <Image source={require('./imagens/triangulos.png')} style={MyStyle.imgT}/>
+        <Text>{foto(tipoT)}</Text>
     </View>
   );
   }
