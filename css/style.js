@@ -4,7 +4,7 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
     container:{
         padding:40.10,
-        borderColor: '#00F',
+        borderColor:'#00F',
         position:'relative',
         display:'flex',
         flexDirection:'column',
@@ -75,6 +75,6 @@ export default StyleSheet.create({
     imgT:{
         resizeMode:'contain',
         width:280,
-        marginTop:-15,
+        marginTop:-130,
     }
 })
