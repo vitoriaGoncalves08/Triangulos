@@ -53,7 +53,6 @@ export default function Aplicacao(){
       default:
         break;
     }
-    
   }
 
   return(
