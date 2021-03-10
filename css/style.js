@@ -2,13 +2,11 @@ import React from 'react';
 import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
-    container:{
+    container2:{
         padding:40.10,
-        borderColor:'#00F',
-        position:'relative',
         display:'flex',
         flexDirection:'column',
-        alignItems:'center', 
+        alignItems:'center',
     },
 
     img:{
@@ -61,7 +59,7 @@ export default StyleSheet.create({
     btnVerificar:{
         width:'100%',
         height:40,
-        backgroundColor:'#7b42f5',
+        backgroundColor:'#32CD32',
         borderRadius:20,
         justifyContent:'center',
         marginBottom:20
@@ -72,9 +70,5 @@ export default StyleSheet.create({
         textAlign:'center'
     },
 
-    imgT:{
-        resizeMode:'contain',
-        width:280,
-        marginTop:-130,
-    }
-})
+   
+});

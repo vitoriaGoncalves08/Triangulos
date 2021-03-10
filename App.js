@@ -1,3 +1,4 @@
+  
 import React,{useState} from 'react';
 import { View, Text, Image, StatusBar, TextInput, TouchableOpacity, Alert} from 'react-native';
 
@@ -53,13 +54,14 @@ export default function Aplicacao(){
       default:
         break;
     }
+    
   }
 
   return(
-    <View style={MyStyle.container}>
+    <View style={MyStyle.container2}>
       <StatusBar hidden/>
 
-      <Image source={require('./imagens/fundo.jpg')}
+      <Image source={require('./imagens/fundo.png')}
                     style={MyStyle.img}/>
 
       <Text style={MyStyle.tit1}>Triângulos</Text>

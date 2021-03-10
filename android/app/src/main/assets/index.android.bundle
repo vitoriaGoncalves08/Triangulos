@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Error: EISDIR: illegal operation on a directory, read<br> &nbsp; &nbsp;at Object.readSync (node:fs:612:3)<br> &nbsp; &nbsp;at tryReadSync (node:fs:382:20)<br> &nbsp; &nbsp;at Object.readFileSync (node:fs:419:19)<br> &nbsp; &nbsp;at UnableToResolveError.buildCodeFrameMessage (C:\reacts\01-03\Triangulos\node_modules\metro\src\node-haste\DependencyGraph\ModuleResolution.js:304:17)<br> &nbsp; &nbsp;at new UnableToResolveError (C:\reacts\01-03\Triangulos\node_modules\metro\src\node-haste\DependencyGraph\ModuleResolution.js:290:35)<br> &nbsp; &nbsp;at ModuleResolver.resolveDependency (C:\reacts\01-03\Triangulos\node_modules\metro\src\node-haste\DependencyGraph\ModuleResolution.js:168:15)<br> &nbsp; &nbsp;at DependencyGraph.resolveDependency (C:\reacts\01-03\Triangulos\node_modules\metro\src\node-haste\DependencyGraph.js:353:43)<br> &nbsp; &nbsp;at C:\reacts\01-03\Triangulos\node_modules\metro\src\lib\transformHelpers.js:271:42<br> &nbsp; &nbsp;at Server.&lt;anonymous&gt; (C:\reacts\01-03\Triangulos\node_modules\metro\src\Server.js:842:41)<br> &nbsp; &nbsp;at Generator.next (&lt;anonymous&gt;)</pre>
+</body>
+</html>
