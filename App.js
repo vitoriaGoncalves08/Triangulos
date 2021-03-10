@@ -15,7 +15,6 @@ export default function Aplicacao(){
   const[desc, setDesc] = useState(null);
    
   const verificar = (A, B, C) => {
-    //alert(A + " " + B + " " + C);
     setTipoT('');
     if(A == null || B == null || C == null || A == "" || B == "" || C == ""){
       Alert.alert("Aviso!","Os campos devem ser todos preenchidos");
@@ -40,7 +39,7 @@ export default function Aplicacao(){
     }
   }
 
-  function foto(tf){
+  function imagem(tf){
     switch(tf) {
       case "Equilátero":
         return(<Image source={require('./imagens/equi.png')} style={MyStyle.imgT}/>)
@@ -86,7 +85,7 @@ export default function Aplicacao(){
         <Text style={MyStyle.conteudo}>{tipoT}</Text>
       </View>
 
-      {foto(tipoT)}
+      {imagem(tipoT)}
 
     </View>
   );
